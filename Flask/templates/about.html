@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About - Employee Performance Prediction
+{% endblock %}
+
+{% block content %}
+<div class="bg-white p-10 rounded-xl shadow-lg max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">About This Project</h1>
+    <p class="text-gray-600 mb-6">
+        Any business's success depends on its employees. Businesses that realize this are concerned about employee output and productivity. Productivity has a compounding effect at the different levels in the workplace, meaning that high productivity at a lower level of organization paves way for higher productivity at the higher levels of the organization. Hence, analysis of performance of employees in any organization is the need of the hour.
+    </p>
+
+    <h2 class="text-2xl font-bold text-teal-600 mb-3">Our Approach</h2>
+    <p class="text-gray-600 mb-6">
+        This tool utilizes a sophisticated machine learning model to predict the productivity of garment workers based on a variety of factors. We have followed a structured approach to build this solution:
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
+        <li><strong>Data Collection & Cleaning:</strong> We started with a rich dataset, which was carefully cleaned and preprocessed to handle missing values and inconsistencies.</li>
+        <li><strong>Feature Engineering:</strong> Categorical data like department and day were converted into a numerical format that the model can understand.</li>
+        <li><strong>Model Training:</strong> We trained and evaluated several regression models, including Linear Regression, Random Forest, and XGBoost, to find the best performer.</li>
+        <li><strong>Deployment:</strong> The best-performing model (XGBoost) was saved and integrated into this user-friendly web application using Flask.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold text-teal-600 mb-3">Goal</h2>
+    <p class="text-gray-600">
+        Our primary goal is to provide managers and HR professionals with a powerful, easy-to-use tool for making informed decisions. By predicting productivity, organizations can better manage talent, optimize workflows, and ultimately drive success.
+    </p>
+</div>
+{% endblock %}

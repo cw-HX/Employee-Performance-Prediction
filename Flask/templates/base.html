@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>{% block title %}Employee Performance Prediction{% endblock %}</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #115e59; /* Medium-dark teal */
+        }
+        .nav-link {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            color: #374151; /* text-gray-700 */
+            border-radius: 0.5rem; /* rounded-lg */
+            transition-property: all;
+            transition-duration: 300ms;
+        }
+        .nav-link:hover {
+            color: #0d9488; /* text-teal-600 */
+            background-color: #f0fdfa; /* bg-teal-50 */
+        }
+        .nav-link.active {
+            font-weight: 600; /* font-semibold */
+            color: #0d9488; /* text-teal-600 */
+            background-color: #ccfbf1; /* bg-teal-100 */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="{{ url_for('home') }}" class="text-xl font-bold text-gray-800">
+                <span class="text-teal-600">Employee</span> Performance Prediction
+            </a>
+            <div class="flex items-center space-x-2">
+                <a href="{{ url_for('home') }}" class="nav-link {% if request.endpoint == 'home' %}active{% endif %}">Home</a>
+                <a href="{{ url_for('about') }}" class="nav-link {% if request.endpoint == 'about' %}active{% endif %}">About</a>
+                <a href="{{ url_for('predict') }}" class="nav-link {% if request.endpoint == 'predict' %}active{% endif %}">Predict</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-12">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-500">
+            <p>&copy; Employee Performance Prediction. SmartInternz Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
