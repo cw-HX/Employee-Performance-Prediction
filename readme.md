@@ -2,7 +2,7 @@
 
 A web application that leverages a machine learning model to predict the productivity of garment factory workers based on various operational factors.
 
-![Home Page](http://googleusercontent.com/file_content/8)
+![Home Page](https://github.com/cw-HX/Employee-Performance-Prediction/blob/main/Code%20Screenshots/Screenshot%202025-08-10%20170807.png?raw=true)
 
 ---
 
@@ -47,10 +47,13 @@ The main objectives of this project are:
 ### ## 4. Application Screenshots
 
 #### About Page
-![About Page](http://googleusercontent.com/file_content/9)
+![About Page](https://github.com/cw-HX/Employee-Performance-Prediction/blob/main/Code%20Screenshots/Screenshot%202025-08-10%20170822.png?raw=true)
 
 #### Prediction Form
-![Prediction Form](http://googleusercontent.com/file_content/10)
+![Prediction Form](https://github.com/cw-HX/Employee-Performance-Prediction/blob/main/Code%20Screenshots/Screenshot%202025-08-10%20170836.png?raw=true)
+
+#### Result
+![Result](https://github.com/cw-HX/Employee-Performance-Prediction/blob/main/Code%20Screenshots/Screenshot%202025-08-10%20170932.png?raw=true)
 
 ---
 
